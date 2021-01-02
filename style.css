@@ -66,3 +66,15 @@ h1 {
 .form-control.error input{
     border-color: rgb(161, 20, 20);
 }
+
+.form-control small {
+    color: rgb(161, 20, 20);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+/* error class to change visibility  */
+.form-control.error small {
+    visibility: visible;
+}
