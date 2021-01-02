@@ -58,3 +58,11 @@ h1 {
     border-color: #00296b;
 }
 
+/* classes for success validation  */
+.form-control.success input{
+    border-color: #08b653;
+}
+/* classes for error on validation  */
+.form-control.error input{
+    border-color: rgb(161, 20, 20);
+}
