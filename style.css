@@ -78,3 +78,17 @@ h1 {
 .form-control.error small {
     visibility: visible;
 }
+
+.form button {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:#a5b8e4;
+    border: 2px solid #a5b8e4;
+    border-radius: 4px;
+    color: #00296b;
+    
+}
