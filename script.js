@@ -20,9 +20,13 @@ function showSuccess(input){
 };
 
 // Check for proper email validation
-function isValidEmail(email){
+function checkEmail(input){
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+    if(re.test(input.value.trim())){
+        showSuccess(input);
+    } else{
+        showError(input, 'Email Is Not Valid')
+    }
 };
 
 // Check required fields
@@ -60,32 +64,6 @@ form.addEventListener("submit", function(e){
   checkRequiredField([username,email,password,password02]);
   checkLength(username, 3, 15);
   checkLength(password, 6, 20);
+  checkEmail(email);
 });
 
-// old "if else" validation 
-// if (username.value === "") {
-//     showError(username, "Username is required");
-// } else{
-//     showSuccess(username);
-// }
-
-// if (email.value === "") {
-//     showError(email, "Email is required");
-// } else if(!isValidEmail(email.value)){
-//     showError(email,"Email is not Valid");
-// }
-// else{
-//     showSuccess(email);
-// }
-
-// if (password.value === "") {
-//     showError(password, "Password is required");
-// } else{
-//     showSuccess(password);
-// }
-
-// if (password02.value === "") {
-//     showError(password02, "Password 2 is required");
-// } else{
-//     showSuccess(password02);
-// }
