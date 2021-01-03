@@ -5,6 +5,8 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password02 = document.getElementById("password02");
 
+// Functions 
+
 // show input error msg
 function showError(input, message){
     const formControl = input.parentElement;
