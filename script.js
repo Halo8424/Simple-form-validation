@@ -57,3 +57,5 @@ form.addEventListener("submit", function(e){
       showSuccess(password02);
   }
 });
+
+// password matching is the next step in this project. 
