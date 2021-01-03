@@ -30,32 +30,33 @@ function isValidEmail(email){
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
-  if (username.value === "") {
-      showError(username, "Username is required");
-  } else{
-      showSuccess(username);
-  }
-
-  if (email.value === "") {
-      showError(email, "Email is required");
-  } else if(!isValidEmail(email.value)){
-      showError(email,"Email is not Valid");
-  }
-  else{
-      showSuccess(email);
-  }
-
-  if (password.value === "") {
-      showError(password, "Password is required");
-  } else{
-      showSuccess(password);
-  }
-
-  if (password02.value === "") {
-      showError(password02, "Password 2 is required");
-  } else{
-      showSuccess(password02);
-  }
+  
 });
 
-// password matching is the next step in this project. 
+// old "if else" validation 
+// if (username.value === "") {
+//     showError(username, "Username is required");
+// } else{
+//     showSuccess(username);
+// }
+
+// if (email.value === "") {
+//     showError(email, "Email is required");
+// } else if(!isValidEmail(email.value)){
+//     showError(email,"Email is not Valid");
+// }
+// else{
+//     showSuccess(email);
+// }
+
+// if (password.value === "") {
+//     showError(password, "Password is required");
+// } else{
+//     showSuccess(password);
+// }
+
+// if (password02.value === "") {
+//     showError(password02, "Password 2 is required");
+// } else{
+//     showSuccess(password02);
+// }
