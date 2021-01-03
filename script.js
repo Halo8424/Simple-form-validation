@@ -25,12 +25,18 @@ function isValidEmail(email){
     return re.test(String(email).toLowerCase());
 };
 
+// Check required fields
+function checkRequiredField(inputArr){
+    inputArr.forEach(function(input){
+        console.log(input);
+    });
+};
 
 // event listener 
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
-  
+  checkRequiredField([username,email,password,password02]);
 });
 
 // old "if else" validation 
