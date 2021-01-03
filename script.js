@@ -5,8 +5,22 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password02 = document.getElementById("password02");
 
-// event listener to from element
+// show input error msg
+function showError(input, message){
+    const formControl = input.parentElement;
+    formControl.className = "form-control error";
+};
+
+
+
+
+// event listener 
 form.addEventListener("submit", function(e){
     e.preventDefault();
-    console.log(username.value);
-})
+
+  if (username.value === "") {
+      showError(username, "Username is required");
+  } else{
+      showSuccess(username);
+  }
+});
