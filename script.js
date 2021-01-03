@@ -8,5 +8,5 @@ const password02 = document.getElementById("password02");
 // event listener to from element
 form.addEventListener("submit", function(e){
     e.preventDefault();
-    console.log("submit");
+    console.log(username.value);
 })
