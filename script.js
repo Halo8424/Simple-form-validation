@@ -9,6 +9,8 @@ const password02 = document.getElementById("password02");
 function showError(input, message){
     const formControl = input.parentElement;
     formControl.className = "form-control error";
+    const small = formControl.querySelector("small");
+    small.innerText = message;
 };
 
 
